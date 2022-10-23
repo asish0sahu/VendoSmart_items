@@ -1,38 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.api-bg-container{
+  background-image:url("https://optinmonster.com/wp-content/uploads/2019/09/blogging-statistics.png");
+  height:100vh;
+}
+li {
+  list-style: none;
+  margin-top: 1rem;
+}
+label {
+  margin-right: 2px;
+}
+input {
+  outline: none;
+}
+.App .column {
+  width: 20%;
+}
+.botn{
+  padding: 5px;
+  color:#ffffff;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(44, 44, 136);
+  border-radius: 8px;
+  margin:6px;
+  margin-top:5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.droppable-col {
+  width: 100%;
+  background-color:rgb(241, 158, 5);
+  padding: 10px 10px 0 10px;
+  border-radius: 7px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.item {
+  margin-bottom: 10px;
+  background-color: rgb(3, 39, 60);
+  color: rgb(236, 248, 244);
+  font-family: "Roboto";
+  font-size: 15px;
+  border: 1px solid rgb(43, 48, 110);
+  padding: 5px;
+  border-radius: 7px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item.dragging {
+  background-color: rgb(170, 73, 38);
+}
+.flex {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #9eb4b3;
+  height: 100%;
+  /* border: 3px solid #1b2430; */
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.desc {
+  font-size: 10px;
+  background-color: rgb(3, 39, 60);
+}
+p {
+  font-size: 12px;
+}
+.footer {
+  position: absolute;
+  bottom: 2px;
+  left: 40%;
+}
+.footerText {
+  font-size: 1rem;
 }
