@@ -21,3 +21,4 @@ o Should popup confirmation dialog Box after submit.
 o Can collapse stages
 
 ## Link 
+https://user-images.githubusercontent.com/111269058/197395321-e3a5184a-fbfa-46b3-b222-b02ac49e6160.png
